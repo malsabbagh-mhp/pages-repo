@@ -11,8 +11,8 @@ jobs:
       run: echo ${GITHUB_WORKSPACE}
     - name: pwd
       run: pwd
-    # - name: ls /github/workspace/docs
-    #   run: ls /github/workspace/docs -all
+    - name: sphinx_needs
+      run: pip install sphinx-needs
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
