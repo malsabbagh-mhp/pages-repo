@@ -19,6 +19,8 @@ jobs:
       run: ls /tmp -all
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
+      with:
+        build-command: "sphinx-build -b html . docs/build"
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
