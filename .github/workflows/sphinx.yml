@@ -20,7 +20,7 @@ jobs:
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
-        build-command: "sphinx-build -b html . docs/build"
+        build-command: "sphinx-build -b html . docs/build -c ."
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
