@@ -13,6 +13,10 @@ jobs:
       run: ls -all
     - name: tmp
       run: mkdir /tmp/sphinx-log
+    - name: tmp-touch
+      run: touch /tmp/sphinx-log
+    - name: ls-tmp
+      run: ls /tmp -all
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
     - name: Upload artifacts
