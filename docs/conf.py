@@ -30,7 +30,7 @@ author = 'Demo Demo'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-              'sphinx_needs',
+            #   'sphinx_needs',
               #'sphinx.ext.autodoc',
               #'sphinx.ext.napoleon',
               #'sphinx.ext.viewcode',
