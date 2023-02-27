@@ -11,8 +11,8 @@ jobs:
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
     - run: |
-      echo "Hallo"
-      ls docs/
+        echo "Hallo"
+        ls docs/
     # upload
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
