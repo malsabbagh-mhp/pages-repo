@@ -7,18 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: echo GITHUB_WORKSPACE
-      run: echo ${GITHUB_WORKSPACE}
-    - name: pwd
-      run: pwd
-    - name: sphinx_needs
-      run: pip install sphinx-needs
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
         build-command: "sphinx-build -b html . docs/build -c ."
-    # - name: Build HTML
-    #   run: "sphinx-build -b html . docs/build -c ."
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
