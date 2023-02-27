@@ -13,8 +13,12 @@ jobs:
     - run: |
         echo "Hallo"
         pwd
+        echo "Hallo"
         ls
+        echo "Hallo"
         ls docs/
+        echo "Hallo"
+        ls docs/docs
     # upload
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
