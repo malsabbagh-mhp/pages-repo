@@ -7,8 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    # build html
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
+    - run: |
+      echo "Hallo"
+      ls docs/
+    # upload
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
