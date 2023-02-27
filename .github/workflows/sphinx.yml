@@ -12,6 +12,8 @@ jobs:
       uses: ammaraskar/sphinx-action@master
     - run: |
         echo "Hallo"
+        pwd
+        ls
         ls docs/
     # upload
     - name: Upload artifacts
