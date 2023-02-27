@@ -7,16 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: echo
+    - name: echo GITHUB_WORKSPACE
       run: echo ${GITHUB_WORKSPACE}
-    - name: ls
-      run: ls -all
-    - name: tmp
-      run: mkdir /tmp/sphinx-log
-    - name: tmp-touch
-      run: touch /tmp/sphinx-log
-    - name: ls-tmp
-      run: ls /tmp -all
+    - name: pwd
+      run: pwd
+    - name: ls /github/workspace/docs
+      run: ls /github/workspace/docs -all
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
