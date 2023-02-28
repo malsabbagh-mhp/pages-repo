@@ -7,32 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.9' 
+    # - uses: actions/setup-python@v4
+    #   with:
+    #     python-version: '3.9' 
     - name: Build HTML
       run: |
           cd docs
           pip install -r requirements.txt
           make html
-    # build html
-    # - name: Build HTML
-    #   uses: ammaraskar/sphinx-action@master
-      # run: |
-      #     pwd
-      #     echo "HALLO1"
-      #     ls
-      #     echo "HALLO2"
-      #     cd docs
-      #     echo "HALLO3"
-      #     pwd
-      #     echo "HALLO4"
-      #     ls
-      #     echo "HALLO5"
-      #     python --version
-      #     pip install sphinx-needs
-      #     pip install sphinxcontrib-plantuml
-      #     make html
     # upload
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
