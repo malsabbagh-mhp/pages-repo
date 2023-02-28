@@ -12,10 +12,15 @@ jobs:
       # uses: ammaraskar/sphinx-action@master
       run: |
           pwd
-          echo "HALLO"
+          echo "HALLO1"
           ls
-          echo "HALLO"
+          echo "HALLO2"
           cd docs
+          echo "HALLO3"
+          pwd
+          echo "HALLO4"
+          ls
+          echo "HALLO5"
           make html
     # upload
     - name: Upload artifacts
