@@ -1,13 +1,3 @@
-Dokumentation
-=============
-
-**Some data**
-
-.. req:: My first requirement
-   :id: REQ_11
-   :status: draft
-   :tags: example
-
 .. No Errors Test Project documentation master file, created by
    sphinx-quickstart on Fri Aug 30 17:07:56 2019.
    You can adapt this file completely to your liking, but it should at least
@@ -20,3 +10,12 @@ Welcome to NOOO Errors Test Project's documentation!
    :caption: Hello World!
 
 
+Dokumentation
+=============
+
+**Some data**
+
+.. req:: My first requirement
+   :id: REQ_11
+   :status: draft
+   :tags: example
