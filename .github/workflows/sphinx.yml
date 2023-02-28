@@ -21,6 +21,7 @@ jobs:
           echo "HALLO4"
           ls
           echo "HALLO5"
+          python --version
           pip install sphinx-needs
           make html
     # upload
