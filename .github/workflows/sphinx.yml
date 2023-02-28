@@ -11,6 +11,10 @@ jobs:
     - name: Build HTML
       # uses: ammaraskar/sphinx-action@master
       run: |
+          pwd
+          echo "HALLO"
+          ls
+          echo "HALLO"
           cd docs
           make html
     # upload
