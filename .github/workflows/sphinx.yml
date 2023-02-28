@@ -12,8 +12,9 @@ jobs:
         python-version: '3.9' 
     - name: Build HTML
       run: |
-          cd docs
           pip install -r requirements.txt
+          cd docs
+          make html
     # build html
     # - name: Build HTML
     #   uses: ammaraskar/sphinx-action@master
