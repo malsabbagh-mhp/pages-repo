@@ -14,6 +14,7 @@ import os
 import sys
 import subprocess
 sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('..'))
 
 
 # Location of additional Python modules for Sphinx (like Sphinx extensions, Need definitions etc.)
@@ -23,6 +24,7 @@ project = 'Demo Project'
 copyright = '2022'
 author = 'Demo Demo'
 
+print("\n\nHallo\n\n")
 
 # -- General configuration ---------------------------------------------------
 
@@ -59,3 +61,5 @@ needs_id_regex = '^[a-zA-Z0-9_]{5,}'
 
 
 
+def setup(app):
+    print("\n\nHallo2\n\n")
