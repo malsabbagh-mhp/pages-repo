@@ -21,6 +21,7 @@ jobs:
           echo "HALLO4"
           ls
           echo "HALLO5"
+          pip install sphinx-needs
           make html
     # upload
     - name: Upload artifacts
