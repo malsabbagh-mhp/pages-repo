@@ -26,6 +26,7 @@ jobs:
           echo "HALLO5"
           python --version
           pip install sphinx-needs
+          pip install sphinxcontrib-plantuml
           make html
     # upload
     - name: Upload artifacts
