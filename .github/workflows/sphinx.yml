@@ -50,7 +50,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: docs/_build/html
-    Publish built docs to gh-pages branch.
+    # Publish built docs to gh-pages branch.
     # ===============================
     # - name: Commit documentation changes
     #   run: |
