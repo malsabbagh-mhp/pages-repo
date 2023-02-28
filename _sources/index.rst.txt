@@ -3,10 +3,10 @@
 
 .. **Some data**
 
-.. .. req:: My first requirement
-..    :id: REQ_11
-..    :status: draft
-..    :tags: example
+.. req:: My first requirement
+   :id: REQ_11
+   :status: draft
+   :tags: example
 
 .. No Errors Test Project documentation master file, created by
    sphinx-quickstart on Fri Aug 30 17:07:56 2019.
