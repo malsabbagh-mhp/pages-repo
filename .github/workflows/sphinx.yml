@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    # - uses: actions/setup-python@v4
-    #   with:
-    #     python-version: '3.9' 
-    - run: |
-          pip install sphinx-needs
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9' 
+    # - run: |
+    #       pip install sphinx-needs
     # build html
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
